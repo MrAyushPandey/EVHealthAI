@@ -19,10 +19,16 @@ class EVHealthDashboard:
     Create interactive dashboards for EV health monitoring
     """
     
+    class EVHealthDashboard:
     def __init__(self):
-        self.load_models()
-        
-    def load_models(self):
+        ...
+
+    def predict_single_vehicle(self, vehicle_data):
+        ...
+
+    def create_component_comparison(self, results):
+        ...
+
         """Load trained models"""
         print("📂 Loading trained models...")
         
@@ -41,9 +47,16 @@ class EVHealthDashboard:
             self.metrics = json.load(f)
         
         print("✅ Models loaded successfully!")
-    
-    def predict_single_vehicle(self, vehicle_data):
+def predict_single_vehicle(self, vehicle_data):
         """Make predictions for a single vehicle"""
+        
+        # Debug: Print column names to check if required columns exist
+        print("Columns in vehicle_data:", vehicle_data.columns)
+        
+        # Check if all required columns are present
+        missing_columns = [col for col in self.feature_names if col not in vehicle_data.columns]
+        if missing_columns:
+            raise KeyError(f"Missing columns in vehicle_data: {', '.join(missing_columns)}")
         
         # Prepare features
         X = vehicle_data[self.feature_names].values
@@ -72,8 +85,8 @@ class EVHealthDashboard:
         }
         
         return results
-    
-    def create_health_gauge(self, health_score, title):
+
+def create_health_gauge(self, health_score, title):
         """Create health gauge chart"""
         
         # Color based on health

@@ -1,3 +1,51 @@
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -140,9 +188,15 @@ celerybeat.pid
 .venv
 env/
 venv/
+new_venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Project specific
+visualizations/*.html
+**/temp/
+**/tmp/
 
 # Spyder project settings
 .spyderproject
