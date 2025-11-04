@@ -197,6 +197,9 @@ venv.bak/
 visualizations/*.html
 **/temp/
 **/tmp/
+New folder/
+*.csv
+!data/*.csv
 
 # Spyder project settings
 .spyderproject
