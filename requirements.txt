@@ -1,0 +1,27 @@
+# EVHealthAI - Required Python Libraries
+
+# Core Data Science
+pandas==2.0.3
+numpy==1.24.3
+scipy==1.11.1
+
+# Machine Learning
+scikit-learn==1.3.0
+xgboost==1.7.6
+joblib==1.3.1
+
+# Deep Learning
+tensorflow==2.13.0
+keras==2.13.1
+
+# Visualization
+plotly==5.15.0
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Optional (for advanced features)
+shap==0.42.1
